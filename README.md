@@ -15,8 +15,8 @@ go to fxmanifest.lua of your resource and add this in the "shared_scripts"
 shared_scripts {
   'grm-discord/init.lua'
 }
-now you have the global "Discord" in your script.
 ```
+now you have the global "Discord" in your script.
 
 # Functions
 ```lua

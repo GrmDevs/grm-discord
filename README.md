@@ -13,7 +13,7 @@ Discord integrations for Fivem
 go to fxmanifest.lua of your resource and add this in the "shared_scripts"
 ```lua
 shared_scripts {
-  'grm-discord/init.lua'
+  '@grm-discord/init.lua'
 }
 ```
 now you have the global "Discord" in your script.

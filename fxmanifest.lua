@@ -7,6 +7,7 @@ game 'gta5'
 -- [[ Resource Information ]] -- 
 author 'Jv$t#8895'
 description 'GRM Discord Integration\'s'
+repository   'https://github.com/GrmDevs/grm-discord'
 version '1.0.0'
 
 -- [[ Manifest ]] -- 

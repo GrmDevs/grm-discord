@@ -3,7 +3,7 @@ Discord integrations for Fivem
 
 # How to install
 - Download the script and drop in the resources folder
-- Open your server.cfg and add this: ```lua ensure grm-discord ```
+- Open your server.cfg and add this: ensure grm-discord
 - Go to: https://discord.com/developers/applications
 - Create a new bot and invite in your server
 - Open the script and go to "init.lua"

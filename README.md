@@ -37,7 +37,7 @@ end
 
 -- get guild info
 Discord.GetGuild()
-    return = {
+    return {
         name
         id
         online -- online users
@@ -47,7 +47,7 @@ end
 -- get role info
 Discord.GetRole(role)
     -- role: role id
-    return = {
+    return {
         id
         name
         permissions
@@ -61,7 +61,7 @@ end
 
 Discord.GetUser(user)
     -- user: player source
-    return = {
+    return {
         avatar
         id
         username

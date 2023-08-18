@@ -61,26 +61,25 @@ if IsDuplicityVersion() then
         GetGuild = function()
             local endpoint = ('guilds/%s?with_counts=true'):format(Discord.Guild)
             local result, message = Discord.Require('GET', endpoint, {})
-            local Discord = json.decode(result)
-    
+            local guild = json.decode(result)
+            
             return {
-                name = Discord.name,
-                id = Discord.id,
-                online = Discord.approximate_presence_count
+                name = guild.name,
+                id = guild.id,
+                online = guild.approximate_presence_count
             }
         end,
         GetRole = function(role)
             local endpoint = ('guilds/%s/roles'):format(Discord.Guild)
             local result, message = Discord.Require('GET', endpoint, {})
             if not result then return false end
-
+            
             local roles = json.decode(result)
             for i = 1, #roles do
-                local row = roles[i]
-                if row.id == role then
-                    return row
+                if string.match(roles[i].id, role) then
+                    return roles[i]
                 end
-            end 
+            end
         end,
         GetUser = function(user)
             local id = Discord.GetIdentifier(user)

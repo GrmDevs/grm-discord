@@ -8,7 +8,7 @@ game 'gta5'
 author 'Jv$t#8895'
 description 'GRM Discord Integration\'s'
 repository   'https://github.com/GrmDevs/grm-discord'
-version '1.0.0'
+version '1.0.1'
 
 -- [[ Manifest ]] -- 
 shared_script 'init.lua'

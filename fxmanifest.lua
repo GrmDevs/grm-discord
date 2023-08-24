@@ -1,14 +1,16 @@
--- [[ FX Information ]] --
 fx_version 'cerulean'
-use_experimental_fxv2_oal 'yes'
-lua54 'yes'
+
 game 'gta5'
 
--- [[ Resource Information ]] -- 
+lua54 'yes'
+
+use_experimental_fxv2_oal 'yes'
+
 author 'Jv$t#8895'
 description 'GRM Discord Integration\'s'
 repository   'https://github.com/GrmDevs/grm-discord'
-version '1.0.1'
+version '1.0.2'
 
--- [[ Manifest ]] -- 
-shared_script 'init.lua'
+server_script 'init.lua'
+
+server_only 'yes'

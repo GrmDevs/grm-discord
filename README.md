@@ -6,13 +6,18 @@ Discord integrations for Fivem
 - Open your server.cfg and add this: ensure grm-discord
 - Go to: https://discord.com/developers/applications
 - Create a new bot and invite in your server
-- Open the script and go to "init.lua"
-- Paste your bot token & guild id in the script
+- Go back to your server.cfg
+- Paste the below with your own bot token & guild id
+
+```
+setr grm_discordBotToken 'token here'
+setr grm_discordGuildId 'guild id here'
+```
 
 # How to import 
-go to fxmanifest.lua of your resource and add this in the "shared_scripts"
+go to fxmanifest.lua of your resource and add this in the "server_scripts"
 ```lua
-shared_scripts {
+server_scripts {
   '@grm-discord/init.lua'
 }
 ```
